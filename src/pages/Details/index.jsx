@@ -1,10 +1,10 @@
 import { Container } from './styles.js'
+import { IncludeButton } from '../../components/includeButton/index.jsx'
 
 export function Index() {
   return ( 
     <Container>
-    <h1>Olá natalye</h1>
-    <button>Click aqui</button>
+    <IncludeButton />
     </Container>
   )
 }

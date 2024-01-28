@@ -14,7 +14,6 @@ font-size: 62.5%;
 body{
   background-color: ${({ theme }) => theme.COLORS.DARK_400};
   color: ${({ theme }) => theme.COLORS.LIGHT_100};
-  
 }
 
 body, input, button, textarea{
@@ -33,10 +32,7 @@ button, a{
   cursor: pointer;
   transition: filter 0.2s;
   font-family: ${({ theme }) => theme.FONTS.POPPINS};
-}
-
-button:hover, a:hover{
-  filter: brightness(0.9);
+  border: none;
 }
 
 input, textArea{
