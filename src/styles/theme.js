@@ -29,4 +29,9 @@ export default {
     CAKE_100: "rgba(6,94,124,1)",
     CAKE_200: "rgba(130,243,255,1)",
   },
+
+  FONTS: {
+    POPPINS: "'Poppins', sans-serif",
+    ROBOTO: "'Roboto', sans-serif",
+  },
 }
