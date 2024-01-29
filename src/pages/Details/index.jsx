@@ -1,10 +1,11 @@
 import { Container } from './styles.js'
-import { IncludeButton } from '../../components/includeButton/index.jsx'
+import { Button } from '../../components/Button'
 
 export function Index() {
-  return ( 
+  return (
     <Container>
-    <IncludeButton />
+      <Button title="Excluir" />
+      <Button title="Incluir" disabled />
     </Container>
   )
 }
