@@ -1,11 +1,10 @@
-import { Container, Content, Explorer, Form} from "./styles"
-import { ButtonText } from '../../components/ButtonText'
-import { Button } from '../../components/Button'
+import { Container, Content, Explorer, Form } from "./styles"
+import { ButtonText } from "../../components/ButtonText"
+import { Button } from "../../components/Button"
 import { Input } from "../../components/Input"
 import { Hexagon } from "@phosphor-icons/react"
 
-
-export function SignIn(){
+export function SignUp() {
   return (
     <Container>
       <Content>
@@ -14,14 +13,16 @@ export function SignIn(){
           <h1>food explorer</h1>
         </Explorer>
         <Form>
-          <span>Faça Login</span>
+          <span>Crie sua conta</span>
+          <p>Seu nome</p>
+          <Input placeholder="Exemplo: Maria da Silva" />
           <p>Email</p>
           <Input placeholder="Exemplo: exemplo@exemplo.com.br" />
           <p>Senha</p>
           <Input placeholder="No mínimo 6 caracteres" />
 
-          <Button title="Entrar" />
-          <ButtonText title="Criar uma conta" />
+          <Button title="Criar uma conta" />
+          <ButtonText title="Já tenho uma conta" />
         </Form>
       </Content>
     </Container>

@@ -8,7 +8,7 @@ export const Container = styled.button`
   align-items: center;
   padding: 1.2rem 2.4rem;
   border-radius: 0.5rem;
-  margin-top: 2rem;
+  margin-top: 3.2rem;
 
   background-color: ${({ theme }) => theme.COLORS.TOMATO_100};
   color: ${({ theme }) => theme.COLORS.LIGHT_100};

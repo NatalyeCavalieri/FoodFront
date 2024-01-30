@@ -1,22 +1,24 @@
-import styled from "styled-components";
-import { BREAKPOINTS } from "../../styles/breakPoints";
-
+import styled from "styled-components"
+import { BREAKPOINTS } from "../../styles/breakPoints"
 
 export const Container = styled.div`
-margin-inline: 5.0rem
+  margin-inline: 5rem;
 `
 
 export const Content = styled.div`
   p {
     margin-top: 7.2rem;
     font-family: ${({ theme }) => theme.FONTS.ROBOTO};
-    color: ${({ theme }) => theme.COLORS.LIGHT_400};
+    color: ${({theme})=> theme.COLORS.LIGHT_400};
     @media (min-width: ${BREAKPOINTS.LG}) {
       margin-top: 0;
     }
   }
 
   :nth-child(4) {
+    margin-top: 3.2rem;
+  }
+  :nth-child(6) {
     margin-top: 3.2rem;
   }
 
@@ -44,6 +46,7 @@ export const Explorer = styled.span`
   h1 {
     font-family: ${({ theme }) => theme.FONTS.ROBOTO};
     font-size: 3.7rem;
+    
     @media (max-width: ${BREAKPOINTS.XS}) {
       font-size: 3rem;
     }
@@ -56,6 +59,8 @@ export const Form = styled.div`
     background-color: ${({ theme }) => theme.COLORS.DARK_700};
     border-radius: 1.6rem;
     min-width: 47rem;
+    margin-bottom: 9rem;
+    margin-top: 9rem;
   }
   span {
     display: none;
