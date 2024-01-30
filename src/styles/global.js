@@ -23,6 +23,10 @@ body, input, button, textarea{
     -moz-osx-font-smoothing: grayscale;
 }
 
+h1{
+  font-family: ${({ theme }) => theme.FONTS.ROBOTO};
+}
+
 
 a{
   text-decoration: none;
