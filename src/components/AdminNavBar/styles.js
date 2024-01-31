@@ -12,7 +12,6 @@ export const Explorer = styled.div`
 
 `
 
-
-export const Input = styled.input`
-
+export const Search = styled.div`
+padding: 6.4rem;
 `

@@ -7,7 +7,7 @@ export const Container = styled.div`
   padding: 5.6rem 2.8rem 2.4rem;
   background-color: ${({ theme }) => theme.COLORS.DARK_700};
   justify-content: space-around;
- 
+  align-items: center;
 
   h1 {
     font-size: 2rem;
@@ -17,6 +17,11 @@ export const Container = styled.div`
     font-size: 2.4rem;
   }
 
+  .hamburger {
+    @media (min-width: ${BREAKPOINTS.LG}) {
+      display: none;
+    }
+  }
 
 `
 
@@ -26,6 +31,11 @@ gap: .8rem;
 `
 
 export const Circle = styled.div`
+
+  @media (min-width: ${BREAKPOINTS.LG}) {
+    display: none;
+  }
+
   > p {
     font-family: ${({ theme }) => theme.FONTS.POPPINS};
     font-size: 1.4rem;
@@ -56,3 +66,18 @@ export const Circle = styled.div`
   }
 `
 
+export const Search = styled.div`
+@media (max-width: ${BREAKPOINTS.MD}) {
+  display: none;
+}
+`
+
+export const Button = styled.div`
+display: flex;
+height: 5.6rem;
+align-items: center;
+gap: 3.2rem;
+  @media (max-width: ${BREAKPOINTS.MD}) {
+    display: none;
+  }
+`

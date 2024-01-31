@@ -6,3 +6,4 @@ export const BREAKPOINTS = {
   LG: "1024px",
   XL: "1280px",
 }
+ 

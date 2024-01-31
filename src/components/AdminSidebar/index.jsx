@@ -4,7 +4,7 @@ import { RxHamburgerMenu } from "react-icons/rx"
 
 import { Hexagon } from "@phosphor-icons/react"
 
-export function AdminNavbarMob() {
+export function AdminSidebar() {
   return (
     <Container>
       <RxHamburgerMenu className="icon"/>

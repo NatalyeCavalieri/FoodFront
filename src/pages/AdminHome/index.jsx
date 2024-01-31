@@ -1,6 +1,12 @@
-import { AdminNavbarMob } from "../../components/AdminNavbarMob"
-import { AdminNavBarDesk } from '../../components/AdminNavBarDesk'
+
+import { AdminSidebar } from "../../components/AdminSidebar"
+import { Container } from "./styles"
+
 
 export function AdminHome (){
-  return <AdminNavBarDesk />
+  return (
+    <Container>
+      <AdminSidebar />
+    </Container>
+  ) 
 }
