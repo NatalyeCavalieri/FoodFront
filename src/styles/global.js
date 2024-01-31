@@ -23,7 +23,7 @@ body, input, button, textarea{
     -moz-osx-font-smoothing: grayscale;
 }
 
-h1{
+h1, p{
   font-family: ${({ theme }) => theme.FONTS.ROBOTO};
 }
 

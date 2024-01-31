@@ -1,8 +1,7 @@
-import { CostumerSideBar } from '../../components/CostumerSideBar'
+import { CostumerNavBarMob } from "../../components/CostumerNavBarMob"
+
 
 
 export function CostumerHome(){
-  return (
-  <CostumerSideBar />
-  )
+  return <CostumerNavBarMob />
 }

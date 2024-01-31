@@ -6,7 +6,7 @@ import { Hexagon } from "@phosphor-icons/react"
 
 
 
-export function CostumerSideBar(){
+export function CostumerNavBarMob(){
   return (
     <Container>
       <RxHamburgerMenu />
@@ -14,8 +14,8 @@ export function CostumerSideBar(){
         <Hexagon size={24} color="#065E7C" weight="fill" />
         <h1>food explorer</h1>
       </Explorer>
-      <PiReceipt />
       <Circle>
+      <PiReceipt />
         <p>0</p>
       </Circle>
     </Container>

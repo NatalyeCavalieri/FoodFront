@@ -7,12 +7,13 @@ import { Index } from "./pages/Details"
 import { SignIn } from './pages/SignIn'
 import { SignUp } from "./pages/SignUp"
 import { CostumerHome } from './pages/CostumerHome'
+import { AdminHome } from "./pages/AdminHome"
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      <CostumerHome />
+      <AdminHome />
     </ThemeProvider>
   </React.StrictMode>
 )
