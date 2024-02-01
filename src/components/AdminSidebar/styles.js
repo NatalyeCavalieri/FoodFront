@@ -18,22 +18,62 @@ export const Container = styled.div`
     font-size: 2.4rem;
   }
 
-  .icon {
-    @media (min-width: ${BREAKPOINTS.MD}){
+  .hamburger {
+    @media (min-width: ${BREAKPOINTS.MD}) {
       margin-right: 10rem;
+    }
+
+    @media (min-width: ${BREAKPOINTS.LG}) {
+      display: none;
     }
   }
 `
 
 export const Explorer = styled.span`
   display: flex;
-  align-items: center;
+
   gap: 0.8rem;
 
+  div {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    @media (min-width: ${BREAKPOINTS.LG}) {
+      display: block;
+      margin-right: 3.2rem;
+    }
+  }
 
   p {
     color: ${({ theme }) => theme.COLORS.CAKE_200};
     font-size: 1.2rem;
+    display: flex;
+    justify-content: end;
+  }
+
+  h1{
+    white-space:nowrap; 
   }
 `
 
+export const Search = styled.div`
+  @media (max-width: ${BREAKPOINTS.L}) {
+    display: none;
+  }
+`
+
+export const Button = styled.div`
+  display: flex;
+  height: 4.5rem;
+  align-items: center;
+  gap: 3.2rem;
+  margin-left: 3.2rem;
+
+  svg{
+    cursor: pointer;
+  }
+
+  @media (max-width: ${BREAKPOINTS.MD}) {
+    display: none;
+  }
+`

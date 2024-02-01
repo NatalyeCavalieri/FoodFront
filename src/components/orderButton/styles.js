@@ -11,7 +11,7 @@ export const Container = styled.div`
 
   > button {
     width: 20rem;
-    height: 5.6rem;
+    height: 4.8rem;
     padding: 1.2rem;
     display: flex;
     justify-content: center;
@@ -19,11 +19,18 @@ export const Container = styled.div`
     background: none;
     border: 0;
     color: white;
-    font-family: ${({theme})=> theme.FONTS.POPPINS};
+    font-family: ${({ theme }) => theme.FONTS.POPPINS};
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 2.4rem;
+    border-radius: 10px;
+    
+    transition: background-color 700ms;
 
+    &:hover {
+      background: ${({ theme }) => theme.COLORS.TOMATO_200};
+      border-radius: 10px;
+    }
   }
 
   > svg {
