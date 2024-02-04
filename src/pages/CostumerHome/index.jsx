@@ -10,10 +10,12 @@ export function CostumerHome(){
     <Container>
       <CostumerSidebar />
       <Section>
-        <div>
-          <h1>Sabores inigualáveis</h1>
-          <p>Sinta o cuidado do preparo com ingredientes selecionados.</p>
+        <div className="section">
           <img src={MacaronsImage} alt="macarons image" />
+          <div>
+            <h1>Sabores inigualáveis</h1>
+            <p>Sinta o cuidado do preparo com ingredientes selecionados.</p>
+          </div>
         </div>
       </Section>
     </Container>

@@ -28,6 +28,7 @@ export default {
     MINT: "rgba(4,211,97,1)",
     CAKE_100: "rgba(6,94,124,1)",
     CAKE_200: "rgba(130,243,255,1)",
+    GRADIENT: "#091E26",
   },
 
   FONTS: {
