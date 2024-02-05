@@ -31,6 +31,7 @@ gap: .8rem;
 `
 
 export const Circle = styled.div`
+position: relative;
 
   @media (min-width: ${BREAKPOINTS.LG}) {
     display: none;
@@ -47,22 +48,13 @@ export const Circle = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    position: fixed;
-    right: 3.375rem;
-    top: 5rem;
-
-    @media (min-width: ${BREAKPOINTS.X}) {
-      right: 4.75rem;
-    }
-
-    @media (min-width: ${BREAKPOINTS.MD}) {
-      right: 11rem;
-    }
+    position: absolute;
+    bottom: 20px;
+    right: 0;
   }
 
   > svg {
     font-size: 3.2rem;
-    position: relative;
   }
 `
 
@@ -79,5 +71,9 @@ align-items: center;
 gap: 3.2rem;
   @media (max-width: ${BREAKPOINTS.MD}) {
     display: none;
+  }
+
+  >svg{
+    cursor: pointer;
   }
 `

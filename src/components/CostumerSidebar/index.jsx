@@ -28,7 +28,7 @@ export function CostumerSidebar(){
         <CiLogin />
       </Button>
       <Circle>
-        <PiReceipt />
+        <PiReceipt/>
         <p>0</p>
       </Circle>
     </Container>

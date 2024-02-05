@@ -8,7 +8,11 @@ export const Container = styled.div`
   background-color: ${({ theme }) => theme.COLORS.TOMATO_100};
   color: ${({ theme }) => theme.COLORS.LIGHT_100};
   border-radius: 10px;
-
+  &:hover {
+    background: ${({ theme }) => theme.COLORS.TOMATO_200};
+    border-radius: 10px;
+  }
+  
   > button {
     width: 20rem;
     height: 4.8rem;
@@ -24,13 +28,8 @@ export const Container = styled.div`
     font-weight: 500;
     line-height: 2.4rem;
     border-radius: 10px;
-    
-    transition: background-color 700ms;
 
-    &:hover {
-      background: ${({ theme }) => theme.COLORS.TOMATO_200};
-      border-radius: 10px;
-    }
+    transition: background-color 700ms;
   }
 
   > svg {
