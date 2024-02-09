@@ -1,13 +1,13 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const Container = styled.button`
-  height: 4.8rem;
+  width: 100%;
+  height: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 1.2rem 2.4rem;
   border-radius: 0.5rem;
-  margin-top: 3.2rem;
 
   background-color: ${({ theme }) => theme.COLORS.TOMATO_100};
   color: ${({ theme }) => theme.COLORS.LIGHT_100};

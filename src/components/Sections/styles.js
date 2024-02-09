@@ -12,6 +12,7 @@ export const Section = styled.div`
     display: flex;
     align-items: center;
     text-align: justify;
+    margin-bottom: 8.6rem;
 
     @media (min-width: ${BREAKPOINTS.L}) {
       height: 26rem;
