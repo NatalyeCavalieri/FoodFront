@@ -1,7 +1,7 @@
-import { Container, SlideControl, Card } from "./styles"
-import { Button } from "../Button"
+import { Container, SlideControl } from "./styles"
 
-import { CiHeart } from "react-icons/ci"
+import { Card } from '../Card'
+
 
 import { Swiper, SwiperSlide } from "swiper/react"
 import { EffectCoverflow, Pagination, Navigation } from "swiper/modules"
@@ -10,13 +10,11 @@ import "swiper/css/effect-coverflow"
 import "swiper/css/pagination"
 import "swiper/css/navigation"
 
-import slideImage_1 from "../../assets/Mask group-1.png"
-import slideImage_2 from "../../assets/Mask group-2.png"
-import slideImage_3 from "../../assets/Mask group-3.png"
-import slideImage_4 from "../../assets/Mask group-4.png"
-import slideImage_5 from "../../assets/Mask group-5.png"
+
+
 
 export function CostumerCards() {
+ 
   return (
     <Container>
       <p>Refeições</p>
@@ -26,6 +24,14 @@ export function CostumerCards() {
         centeredSlides={true}
         loop={true}
         slidesPerView={3}
+        breakpoints={{
+          320: {
+            slidesPerView: 2,
+          },
+          760: {
+            slidesPerView: 4,
+          },
+        }}
         coverflowEffect={{
           rotate: 0,
           stretch: 0,
@@ -42,59 +48,19 @@ export function CostumerCards() {
         className="swiper-container"
       >
         <SwiperSlide>
-          <Card>
-            <div>
-              <CiHeart size={32} />
-              <img src={slideImage_1} />
-              <a href="#"> Salada Ravanello > </a>
-              <p>R$ 49,97</p>
-              <Button title="incluir" />
-            </div>
-          </Card>
+          <Card />
         </SwiperSlide>
         <SwiperSlide>
-          <Card>
-            <div>
-              <CiHeart size={32} />
-              <img src={slideImage_2} />
-              <a href="#"> Salada Ravanello > </a>
-              <p>R$ 49,97</p>
-              <Button title="incluir" />
-            </div>
-          </Card>
+          <Card />
         </SwiperSlide>
         <SwiperSlide>
-          <Card>
-            <div>
-              <CiHeart size={32} />
-              <img src={slideImage_3} />
-              <a href="#"> Salada Ravanello > </a>
-              <p>R$ 49,97</p>
-              <Button title="incluir" />
-            </div>
-          </Card>
+          <Card />
         </SwiperSlide>
         <SwiperSlide>
-          <Card>
-            <div>
-              <CiHeart size={32} />
-              <img src={slideImage_4} />
-              <a href="#"> Salada Ravanello > </a>
-              <p>R$ 49,97</p>
-              <Button title="incluir" />
-            </div>
-          </Card>
+          <Card />
         </SwiperSlide>
         <SwiperSlide>
-          <Card>
-            <div>
-              <CiHeart size={32} />
-              <img src={slideImage_5} />
-              <a href="#"> Salada Ravanello > </a>
-              <p>R$ 49,97</p>
-              <Button title="incluir" />
-            </div>
-          </Card>
+          <Card />
         </SwiperSlide>
         <SlideControl>
           <div className="button-prev slider-arrow">
