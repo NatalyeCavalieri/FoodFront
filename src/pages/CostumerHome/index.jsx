@@ -2,16 +2,18 @@ import { Container } from "./styles"
 
 import { CostumerSidebar } from "../../components/CostumerSidebar"
 import { Sections } from "../../components/Sections"
-import { CostumerCards } from "../../components/CostumerCards"
+import { CostumerSlides } from "../../components/CostumerSlides"
+import { Footer } from "../../components/Footer"
 
 export function CostumerHome() {
   return (
     <Container>
       <CostumerSidebar />
       <Sections />
-      <CostumerCards />
-      <CostumerCards />
-      <CostumerCards />
+      <CostumerSlides />
+      <CostumerSlides />
+      <CostumerSlides />
+      <Footer />
     </Container>
   )
 }

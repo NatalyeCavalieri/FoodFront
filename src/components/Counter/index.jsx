@@ -19,13 +19,12 @@ export function Counter() {
   return (
     <Container>
       <div>
-        <button type="button" onClick={increment}>
-          <LuPlus />
-        </button>
-        <span> {String(count).padStart(2, "0")} </span>
-
         <button onClick={decrement}>
           <FiMinus />
+        </button>
+        <span> {String(count).padStart(2, "0")} </span>
+        <button type="button" onClick={increment}>
+          <LuPlus />
         </button>
       </div>
     </Container>

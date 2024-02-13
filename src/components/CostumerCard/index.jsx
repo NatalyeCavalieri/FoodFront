@@ -8,7 +8,7 @@ import { Counter } from '../Counter'
 import slideImage_1 from "../../assets/Mask group-1.png"
 
 
-export function Card(){
+export function CostumerCard(){
    const [emptyHeart, setEmptyHeart] = useState(true)
 
    function handleToggleHeart() {

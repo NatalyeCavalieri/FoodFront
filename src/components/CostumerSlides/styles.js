@@ -31,6 +31,7 @@ export const SlideControl = styled.div`
   gap: 6rem;
   margin-bottom: 1rem;
   margin-top: 4rem;
+  cursor: pointer;
 
   .swiper-pagination {
     margin-bottom: 3rem;

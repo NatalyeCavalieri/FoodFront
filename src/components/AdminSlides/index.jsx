@@ -1,7 +1,6 @@
 import { Container, SlideControl } from "./styles"
 
-import { Card } from '../Card'
-
+import { AdminCard } from "../AdminCard"
 
 import { Swiper, SwiperSlide } from "swiper/react"
 import { EffectCoverflow, Pagination, Navigation } from "swiper/modules"
@@ -12,9 +11,7 @@ import "swiper/css/navigation"
 
 
 
-
-export function CostumerCards() {
- 
+export function AdminSlides() {
   return (
     <Container>
       <p>Refeições</p>
@@ -48,19 +45,19 @@ export function CostumerCards() {
         className="swiper-container"
       >
         <SwiperSlide>
-          <Card />
+          <AdminCard />
         </SwiperSlide>
         <SwiperSlide>
-          <Card />
+          <AdminCard />
         </SwiperSlide>
         <SwiperSlide>
-          <Card />
+          <AdminCard />
         </SwiperSlide>
         <SwiperSlide>
-          <Card />
+          <AdminCard />
         </SwiperSlide>
         <SwiperSlide>
-          <Card />
+          <AdminCard />
         </SwiperSlide>
         <SlideControl>
           <div className="button-prev slider-arrow">
