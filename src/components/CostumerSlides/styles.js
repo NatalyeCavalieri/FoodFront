@@ -12,10 +12,17 @@ export const Container = styled.div`
     margin-right: 0.5rem;
   }
 
-  p {
-    font-size: 1.8rem;
+  .title {
+    margin-left: 10rem;
+    font-size: 3.2rem;
     font-family: ${({ theme }) => theme.COLORS.POPPINS};
     font-weight: 400;
+
+    @media (max-width: ${BREAKPOINTS.MD}) {
+    margin-left: 0;
+    font-size: 1.8rem;
+   
+  }
   }
 
   img {

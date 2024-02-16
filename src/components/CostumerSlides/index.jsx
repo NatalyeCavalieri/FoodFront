@@ -17,13 +17,14 @@ export function CostumerSlides() {
  
   return (
     <Container>
-      <p>Refeições</p>
+      <p className="title">Refeições</p>
       <Swiper
         effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
         loop={true}
         slidesPerView={3}
+        spaceBetween={200}
         breakpoints={{
           320: {
             slidesPerView: 2,

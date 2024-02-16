@@ -1,4 +1,4 @@
-import { Container } from './styles'
+import { Container, DescriptionContainer, ImageContainer, PriceContainer } from './styles'
 import { CiHeart } from "react-icons/ci"
 import { FaHeart } from "react-icons/fa"
 import { useState } from 'react'
@@ -26,11 +26,16 @@ export function CostumerCard(){
              <FaHeart className="fullHeart" size={28} />
            )}
          </button>
+         <ImageContainer>
          <img src={slideImage_1} />
+         </ImageContainer>
          <a href="#"> Salada Ravanello &gt; </a>
-         <p>R$ 49,97</p>
+         <DescriptionContainer>Delicioso folheado de pêssego com folhas de hortelã.</DescriptionContainer>
+         <PriceContainer>R$ 49,97</PriceContainer>
+         <div className='counter-button'>
          <Counter/>
          <Button title="incluir" />
+         </div>
        </div>
        
      </Container>

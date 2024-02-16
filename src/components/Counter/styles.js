@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { BREAKPOINTS } from "../../styles/breakPoints"
 
 export const Container = styled.div`
   div {
@@ -8,6 +9,7 @@ export const Container = styled.div`
     align-items: center;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
+     
 
     button {
       background-color: transparent;
@@ -15,7 +17,16 @@ export const Container = styled.div`
       display: flex;
       > svg {
         font-size: 2rem;
+         @media (min-width: ${BREAKPOINTS.L}) {
+        font-size: 2.5rem;
+    }
       }
     }
+
+    span {
+      @media (min-width: ${BREAKPOINTS.L}) {
+        font-size: 2rem;
+    }
   }
+}
 `

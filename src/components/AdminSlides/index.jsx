@@ -14,11 +14,12 @@ import "swiper/css/navigation"
 export function AdminSlides() {
   return (
     <Container>
-      <p>Refeições</p>
+      <p className="title">Refeições</p>
       <Swiper
         effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
+        spaceBetween={200}
         loop={true}
         slidesPerView={3}
         breakpoints={{

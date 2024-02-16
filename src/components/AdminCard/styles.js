@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { BREAKPOINTS } from "../../styles/breakPoints"
 
 export const Container = styled.div`
   width: 21rem;
@@ -6,10 +7,12 @@ export const Container = styled.div`
   background-color: black;
   position: relative;
   border-radius: 1rem;
-  
-  img{
-    margin-top: 3rem;
-  }
+  @media (min-width: ${BREAKPOINTS.L}) {
+      width: 30rem;
+      height: 42rem;
+      padding-inline: 3.4rem;
+    }
+
 
   div {
     display: flex;
@@ -22,12 +25,10 @@ export const Container = styled.div`
     color: ${({ theme }) => theme.COLORS.LIGHT_300};
     font-size: 1.4rem;
     line-height: 2.4rem;
-  }
-
-  p {
-    color: ${({ theme }) => theme.COLORS.CAKE_200};
-    font-size: 1.6rem;
-    font-family: ${({ theme }) => theme.FONTS.ROBOTO};
+    white-space: nowrap;
+     @media (min-width: ${BREAKPOINTS.L}) {
+      font-size: 2.4rem;
+    }
   }
 
   button {
@@ -38,7 +39,45 @@ export const Container = styled.div`
       right: 1.6rem;
       top: 1.6rem;
       color: ${({ theme }) => theme.COLORS.LIGHT_300};
-      
-    }
+   }
   }
+`
+
+export const ImageContainer = styled.div`
+img{
+
+  @media (min-width: ${BREAKPOINTS.L}) {
+      height: 17rem;
+      width: 17rem;
+      margin-bottom: 1.5rem;
+      margin-top: 3rem;
+    }
+  
+}
+`
+
+export const DescriptionContainer= styled.span`
+@media (max-width: ${BREAKPOINTS.MD}) {
+      display: none;
+
+    }
+
+ @media (min-width: ${BREAKPOINTS.L}) {
+      display: flex;
+      text-align: center;
+      color: ${({theme}) => theme.COLORS.LIGHT_300};
+      line-height: 2.2rem;
+      font-size: 1.4rem;
+
+    }
+`
+
+export const PriceContainer = styled.span`
+    color: ${({ theme }) => theme.COLORS.CAKE_200};
+    font-size: 1.6rem;
+    font-family: ${({ theme }) => theme.FONTS.ROBOTO};
+
+     @media (min-width: ${BREAKPOINTS.L}) {
+      font-size: 3.2rem;
+     }
 `
