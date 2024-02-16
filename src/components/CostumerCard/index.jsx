@@ -4,7 +4,6 @@ import { FaHeart } from "react-icons/fa"
 import { useState } from 'react'
 import { Button } from "../Button"
 import { Counter } from '../Counter'
-
 import slideImage_1 from "../../assets/Mask group-1.png"
 
 
@@ -29,7 +28,7 @@ export function CostumerCard(){
          <ImageContainer>
          <img src={slideImage_1} />
          </ImageContainer>
-         <a href="#"> Salada Ravanello &gt; </a>
+         <a href='#'> Salada Ravanello &gt; </a>
          <DescriptionContainer>Delicioso folheado de pêssego com folhas de hortelã.</DescriptionContainer>
          <PriceContainer>R$ 49,97</PriceContainer>
          <div className='counter-button'>
