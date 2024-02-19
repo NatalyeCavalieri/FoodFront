@@ -9,6 +9,7 @@ export const Container = styled.div`
     align-items: center;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
+    gap: 1rem;
      
 
     button {
