@@ -8,13 +8,15 @@ import { SignUp } from "./pages/SignUp"
 import { CostumerHome } from './pages/CostumerHome'
 import { AdminHome } from "./pages/AdminHome"
 import { CostumerDetails } from "./pages/CostumerDetails"
+import { AdminDetails } from './pages/AdminDetails'
+import { New } from './pages/New'
 
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-    <CostumerDetails/>
+      <New />
     </ThemeProvider>
   </React.StrictMode>
 )

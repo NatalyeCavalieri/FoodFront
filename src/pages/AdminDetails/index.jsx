@@ -1,18 +1,16 @@
 import { TagsIngredient } from "../../components/Ingredient";
 import { ButtonReturn, Container, ContentContainer, ImageContainer, Main, MainContainer, Order } from "./styles";
-import { CostumerSidebar } from '../../components/CostumerSidebar'
-import { Counter } from '../../components/Counter'
+import { AdminSidebar } from "../../components/AdminSidebar"
 import { Button } from '../../components/Button'
 import { Footer } from '../../components/Footer'
 import { IoIosArrowBack } from "react-icons/io";
-import { PiReceipt } from "react-icons/pi"
 import slideImage_1 from "../../assets/Mask group-1.png"
 
 
-export function CostumerDetails() {
+export function AdminDetails() {
   return (
     <Container>
-      <CostumerSidebar />
+      <AdminSidebar />
 
       <MainContainer>
         <ButtonReturn>
@@ -25,11 +23,12 @@ export function CostumerDetails() {
           </ImageContainer>
           <ContentContainer>
             <h1>Salada Ravanello</h1>
-            <p>Rabanetes, folhas verdes e molho agridoce salpicados com gergelim.</p>
+            <p>
+              Rabanetes, folhas verdes e molho agridoce salpicados com gergelim.
+            </p>
             <TagsIngredient />
             <Order>
-              <Counter />
-              <Button title="incluir ∙ R$ 25,00" icon={PiReceipt} />
+              <Button title="Editar prato" />
             </Order>
           </ContentContainer>
         </Main>
