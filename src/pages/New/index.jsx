@@ -1,7 +1,9 @@
 import { ButtonReturn, Container, Content, Form, InputContext } from "./styles";
 import { AdminSidebar} from './../../components/AdminSidebar'
-import { IoIosArrowBack } from "react-icons/io"
+import { IoIosArrowBack, IoIosClose  } from "react-icons/io"
 import { FiUpload } from "react-icons/fi"
+import { BsPlus } from "react-icons/bs"
+import { InputIngredient } from "../../components/InputIngradient";
 
 
 export function New(){
@@ -18,11 +20,11 @@ return (
       <Form>
         <InputContext>
           <p>Imagem do prato</p>
-          <label htmlFor="arquivo" className="label-file">
+          <label htmlFor="file" className="label-file">
             <FiUpload size={24} />
             Selecione imagem
           </label>
-          <input type="file" id="arquivo" />
+          <input type="file" id="file" />
         </InputContext>
         <InputContext>
           <label className="label-text">Nome</label>
@@ -38,6 +40,10 @@ return (
             <option value="category3">Bebidas</option>
             <option value="category4">Sobremesa</option>
           </select>
+        </InputContext>
+        <InputContext>
+        <label className="label-text">Ingredientes</label>
+          <InputIngredient icon={BsPlus} placeholder="Adicionar" />
         </InputContext>
       </Form>
     </Content>

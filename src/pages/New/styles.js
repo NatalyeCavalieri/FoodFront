@@ -74,7 +74,7 @@ export const InputContext = styled.div`
     color: ${({ theme }) => theme.COLORS.LIGHT_400};
   }
 
-  input[type="text"] {
+ > input {
     border: none;
     background-color: ${({ theme }) => theme.COLORS.DARK_800};
     border-radius: 8px;
@@ -99,9 +99,8 @@ export const InputContext = styled.div`
     font-size: 1.4rem;
     padding: 1.2rem 3.2rem;
     color: ${({ theme }) => theme.COLORS.LIGHT_400};
-    
 
-    &:focus{
+    &:focus {
       outline: none;
     }
   }
