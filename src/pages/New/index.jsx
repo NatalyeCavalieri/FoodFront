@@ -1,4 +1,4 @@
-import { ButtonReturn, Container, Content, Form, InputContext } from "./styles";
+import { ButtonReturn, Container, Content, Form, Ingredients, InputContext, InputRead } from "./styles";
 import { AdminSidebar} from './../../components/AdminSidebar'
 import { IoIosArrowBack, IoIosClose  } from "react-icons/io"
 import { FiUpload } from "react-icons/fi"
@@ -41,10 +41,18 @@ return (
             <option value="category4">Sobremesa</option>
           </select>
         </InputContext>
-        <InputContext>
-        <label className="label-text">Ingredientes</label>
-          <InputIngredient icon={BsPlus} placeholder="Adicionar" />
-        </InputContext>
+        <Ingredients>
+          <p>Ingredientes</p>
+          <div className="inputs">
+            <InputRead>
+              <div>
+                Pão Naan
+                <IoIosClose size={20} />
+              </div>
+            </InputRead>
+            <InputIngredient icon={BsPlus} placeholder="Adicionar" />
+          </div>
+        </Ingredients>
       </Form>
     </Content>
   </Container>

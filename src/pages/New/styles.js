@@ -74,7 +74,7 @@ export const InputContext = styled.div`
     color: ${({ theme }) => theme.COLORS.LIGHT_400};
   }
 
- > input {
+  > input {
     border: none;
     background-color: ${({ theme }) => theme.COLORS.DARK_800};
     border-radius: 8px;
@@ -103,5 +103,48 @@ export const InputContext = styled.div`
     &:focus {
       outline: none;
     }
+  }
+`
+
+export const InputRead = styled.div`
+  background-color: ${({ theme }) => theme.COLORS.LIGHT_600};
+  color: white;
+  border: none;
+  height: 3.2rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.2rem 1rem 1.2rem;
+  width: 12rem;
+
+  div {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    svg {
+      cursor: pointer;
+    }
+  }
+`
+
+export const Ingredients = styled.div`
+  .inputs {
+    display: flex;
+    gap: 1.6rem;
+    background-color: ${({ theme }) => theme.COLORS.DARK_800};
+    color: ${({ theme }) => theme.COLORS.LIGHT_100};
+    border-radius: 8px;
+    margin-top: 1.6rem;
+    font-family: ${({ theme }) => theme.FONTS.ROBOTO};
+    font-size: 1.6rem;
+    padding: 1.2rem 0.8rem;
+    white-space: nowrap;
+  }
+
+ > p {
+    font-size: 1.6rem;
+    color: ${({ theme }) => theme.COLORS.LIGHT_400};
+    font-family: ${({ theme }) => theme.FONTS.ROBOTO};
+    margin-top: 2.4rem;
   }
 `

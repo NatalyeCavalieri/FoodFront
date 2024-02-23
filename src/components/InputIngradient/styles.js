@@ -6,7 +6,6 @@ export const IngredientsType = styled.div`
   border: none;
   height: 3.2rem;
   border-radius: 8px;
-  margin-top: 1.6rem;
   display: flex;
   align-items: center;
   border: 1px dashed ${({ theme }) => theme.COLORS.LIGHT_500};
