@@ -11,12 +11,13 @@ export const Container = styled.button`
   border-radius: 0.5rem;
   gap:0.5rem;
 
-  background-color: ${({ theme }) => theme.COLORS.TOMATO_100};
+  background-color: ${({ theme, background }) => background ? theme.COLORS.TOMATO_400 : theme.COLORS.TOMATO_100};
   color: ${({ theme }) => theme.COLORS.LIGHT_100};
 
   font-size: 1.4rem;
   line-height: 2.4rem;
   font-weight: 500;
+  transition: background-color 500ms;
   
 
   @media (max-width: ${BREAKPOINTS.X}) {
@@ -31,7 +32,7 @@ display: none;
   }
 
   &:hover {
-    background-color: ${({ theme }) => theme.COLORS.TOMATO_200};
+    background-color: ${({ theme, background }) => background ? theme.COLORS.TOMATO_300 : theme.COLORS.TOMATO_200};
   }
 
   &:disabled {

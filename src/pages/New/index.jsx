@@ -1,9 +1,14 @@
-import { ButtonReturn, Container, Content, Form, Ingredients, InputContext, InputRead } from "./styles";
+import { ButtonReturn, Container, Content, Form, Ingredients, InputRead } from "./styles";
 import { AdminSidebar} from './../../components/AdminSidebar'
 import { IoIosArrowBack, IoIosClose  } from "react-icons/io"
-import { FiUpload } from "react-icons/fi"
 import { BsPlus } from "react-icons/bs"
-import { InputIngredient } from "../../components/InputIngradient";
+import { InputIngredient } from "../../components/Input/InputsNew/InputIngredient";
+import { InputText } from "../../components/Input/InputsNew/InputText/InputText";
+import { InputFile } from "../../components/Input/InputsNew/InputFile/InputFile";
+import { InputSelect } from "../../components/Input/InputsNew/InputSelect/InputSelect";
+import { Textarea } from "../../components/Input/InputsNew/Textarea/Textarea";
+import { Button } from '../../components/Button'
+import { Footer } from '../../components/Footer'
 
 
 export function New(){
@@ -18,29 +23,9 @@ return (
       <h1>Novo prato</h1>
 
       <Form>
-        <InputContext>
-          <p>Imagem do prato</p>
-          <label htmlFor="file" className="label-file">
-            <FiUpload size={24} />
-            Selecione imagem
-          </label>
-          <input type="file" id="file" />
-        </InputContext>
-        <InputContext>
-          <label className="label-text">Nome</label>
-          <input type="text" placeholder="Ex.: Salada Ceasar" />
-        </InputContext>
-        <InputContext>
-          <label htmlFor="category" className="label-text">
-            Categoria
-          </label>
-          <select name="category" id="category">
-            <option value="category1">Refeição</option>
-            <option value="category2">Prato principal</option>
-            <option value="category3">Bebidas</option>
-            <option value="category4">Sobremesa</option>
-          </select>
-        </InputContext>
+        <InputFile />
+        <InputText placeholder="Ex.: Salada Ceasar" type="text" title="Nome" />
+        <InputSelect />
         <Ingredients>
           <p>Ingredientes</p>
           <div className="inputs">
@@ -53,8 +38,12 @@ return (
             <InputIngredient icon={BsPlus} placeholder="Adicionar" />
           </div>
         </Ingredients>
+        <InputText placeholder="R$ 00,00" type="text" title="Preço" />
+        <Textarea />
+        <Button title="Salvar alterações" type="submit" background="true" />
       </Form>
     </Content>
+    <Footer/>
   </Container>
 )
 }
