@@ -1,9 +1,7 @@
 import styled from "styled-components"
 import { BREAKPOINTS } from "../../styles/breakPoints"
 
-export const Container = styled.div`
-
-`
+export const Container = styled.div``
 
 export const ButtonReturn = styled.div`
   display: flex;

@@ -1,14 +1,21 @@
 import styled from "styled-components";
+import { BREAKPOINTS } from "../../../../styles/breakPoints";
 
 export const ContainerSelect= styled.div`
 display: flex;
 flex-direction: column;
+   @media (min-width: ${BREAKPOINTS.L}) {
+      flex:1;
+  }
 
 label {
     font-size: 1.6rem;
     color: ${({ theme }) => theme.COLORS.LIGHT_400};
     font-family: ${({ theme }) => theme.FONTS.ROBOTO};
     margin-top: 2.4rem;
+      @media (min-width: ${BREAKPOINTS.L}) {
+      margin-top: 0;
+  }
   }
 
   select {

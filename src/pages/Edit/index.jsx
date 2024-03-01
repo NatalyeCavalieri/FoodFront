@@ -10,7 +10,7 @@ import { Textarea } from "../../components/Input/InputsNew/Textarea/Textarea";
 import { Button } from '../../components/Button'
 import { Footer } from '../../components/Footer'
 
-export function New({title}){
+export function Edit({title}){
 return (
   <Container>
     <AdminSidebar />
