@@ -9,8 +9,9 @@ import { New } from '../pages/New'
 import { Edit } from "../pages/Edit"
 
 export function Router(){
+  return(
   <Routes>
-    <Route path="/" element={<SignIn />} />
+    <Route path="/signin" element={<SignIn />} />
     <Route path="/signup" element={<SignUp />} />
     <Route path="/adminHome" element={<AdminHome />} />
     <Route path="/costumerHome" element={<CostumerHome />} />
@@ -19,4 +20,5 @@ export function Router(){
     <Route path="/new" element={<New />} />
     <Route path="/edit" element={<Edit />} />
   </Routes>
+  )
 }

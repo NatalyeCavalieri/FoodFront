@@ -1,31 +1,36 @@
-import styled from "styled-components";
-import { BREAKPOINTS } from "../../styles/breakPoints";
-
+import styled from "styled-components"
+import { BREAKPOINTS } from "../../styles/breakPoints"
 
 export const Container = styled.div`
-margin-inline: 5.0rem
+  margin-inline: 5rem;
+   @media (min-width: ${BREAKPOINTS.MD}) {
+     display: flex;
+     justify-content: space-evenly;
+    }
 `
 
 export const Content = styled.div`
+  
+   @media (min-width: ${BREAKPOINTS.L}) {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
   p {
     margin-top: 7.2rem;
     font-family: ${({ theme }) => theme.FONTS.ROBOTO};
     color: ${({ theme }) => theme.COLORS.LIGHT_400};
-    @media (min-width: ${BREAKPOINTS.LG}) {
+    margin-bottom: 0.8rem;
+    @media (min-width: ${BREAKPOINTS.MD}) {
       margin-top: 0;
     }
   }
 
   :nth-child(4) {
     margin-top: 3.2rem;
-  }
-
-  @media (min-width: ${BREAKPOINTS.LG}) {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
   }
 `
 
@@ -36,10 +41,13 @@ export const Explorer = styled.span`
   gap: 1rem;
   margin-top: 15rem;
   white-space: nowrap;
+  margin-bottom: 7rem;
 
-  @media (min-width: ${BREAKPOINTS.LG}) {
+  @media (min-width: ${BREAKPOINTS.L}) {
     margin-top: 0;
   }
+ 
+
 
   h1 {
     font-family: ${({ theme }) => theme.FONTS.ROBOTO};

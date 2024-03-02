@@ -8,6 +8,7 @@ export const Container = styled.div`
 export const Content = styled.div`
   p {
     margin-top: 7.2rem;
+    margin-bottom: 1rem;
     font-family: ${({ theme }) => theme.FONTS.ROBOTO};
     color: ${({theme})=> theme.COLORS.LIGHT_400};
     @media (min-width: ${BREAKPOINTS.LG}) {

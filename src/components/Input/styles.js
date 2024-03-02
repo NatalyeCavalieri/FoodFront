@@ -1,4 +1,5 @@
-import styled from "styled-components";
+import styled from "styled-components"
+import { BREAKPOINTS } from "../../styles/breakPoints"
 
 export const Container = styled.div`
   width: 100%;
@@ -7,7 +8,8 @@ export const Container = styled.div`
   background-color: ${({ theme }) => theme.COLORS.DARK_900};
   color: ${({ theme }) => theme.COLORS.LIGHT_100};
   border-radius: 10px;
-  padding-inline: 10rem;
+  padding-inline: 0;
+  margin-bottom: 3rem;
 
   > input {
     width: 27.5rem;
@@ -23,14 +25,16 @@ export const Container = styled.div`
     &::placeholder {
       width: 100%;
       color: ${({ theme }) => theme.COLORS.LIGHT_500};
-      font-size: 1.6rem;
+      font-size: 1.4rem;
       font-family: ${({ theme }) => theme.FONTS.ROBOTO};
-      text-align: center;
-      
+      text-align: start;
+       @media (max-width: ${BREAKPOINTS.SM}) {
+        font-size: 1.2rem;
+  }
     }
   }
 
-  > svg{
+  > svg {
     margin-left: 1.6rem;
   }
 `

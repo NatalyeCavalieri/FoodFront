@@ -10,7 +10,7 @@ import { Textarea } from "../../components/Input/InputsNew/Textarea/Textarea";
 import { Button } from '../../components/Button'
 import { Footer } from '../../components/Footer'
 
-export function Edit({title}){
+export function Edit(){
 return (
   <Container>
     <AdminSidebar />
@@ -20,7 +20,7 @@ return (
           <IoIosArrowBack size={24} />
           <button>Voltar</button>
         </ButtonReturn>
-        <h1> {title} </h1>
+        <h1> Editar prato </h1>
 
         <Form>
           <div className="firstRowInput">
