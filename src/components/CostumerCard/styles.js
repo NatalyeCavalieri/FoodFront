@@ -32,6 +32,10 @@ export const Container = styled.div`
     font-size: 1.4rem;
     line-height: 2.4rem;
 
+    :hover{
+       color: ${({ theme }) => theme.COLORS.LIGHT_500};
+    }
+
     @media (min-width: ${BREAKPOINTS.L}) {
       font-size: 2.4rem;
     }

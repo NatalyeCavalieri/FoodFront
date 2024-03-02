@@ -7,6 +7,7 @@ import { Footer } from '../../components/Footer'
 import { IoIosArrowBack } from "react-icons/io";
 import { PiReceipt } from "react-icons/pi"
 import slideImage_1 from "../../assets/Mask group-1.png"
+import { NavLink } from "react-router-dom";
 
 
 export function CostumerDetails() {
@@ -15,17 +16,21 @@ export function CostumerDetails() {
       <CostumerSidebar />
 
       <MainContainer>
-        <ButtonReturn>
-          <IoIosArrowBack size={24} />
-          <button>Voltar</button>
-        </ButtonReturn>
+        <NavLink to="/costumerHome">
+          <ButtonReturn>
+            <IoIosArrowBack size={24} />
+            <button>Voltar</button>
+          </ButtonReturn>
+        </NavLink>
         <Main>
           <ImageContainer>
             <img src={slideImage_1} />
           </ImageContainer>
           <ContentContainer>
             <h1>Salada Ravanello</h1>
-            <p>Rabanetes, folhas verdes e molho agridoce salpicados com gergelim.</p>
+            <p>
+              Rabanetes, folhas verdes e molho agridoce salpicados com gergelim.
+            </p>
             <TagsIngredient />
             <Order>
               <Counter />

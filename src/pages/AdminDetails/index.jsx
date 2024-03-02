@@ -5,6 +5,7 @@ import { Button } from '../../components/Button'
 import { Footer } from '../../components/Footer'
 import { IoIosArrowBack } from "react-icons/io";
 import slideImage_1 from "../../assets/Mask group-1.png"
+import { NavLink } from "react-router-dom";
 
 
 export function AdminDetails() {
@@ -13,10 +14,12 @@ export function AdminDetails() {
       <AdminSidebar />
 
       <MainContainer>
-        <ButtonReturn>
-          <IoIosArrowBack size={24} />
-          <button>Voltar</button>
-        </ButtonReturn>
+        <NavLink to="/adminHome">
+          <ButtonReturn>
+            <IoIosArrowBack size={24} />
+            <button>Voltar</button>
+          </ButtonReturn>
+        </NavLink>
         <Main>
           <ImageContainer>
             <img src={slideImage_1} />

@@ -22,10 +22,15 @@ export const Container = styled.div`
   }
 
   a {
-    color: ${({ theme }) => theme.COLORS.LIGHT_300};
+    color: ${({ theme }) => theme.COLORS.LIGHT_400};
     font-size: 1.4rem;
     line-height: 2.4rem;
     white-space: nowrap;
+
+    :hover{
+       color: ${({ theme }) => theme.COLORS.LIGHT_500};
+    }
+    
      @media (min-width: ${BREAKPOINTS.L}) {
       font-size: 2.4rem;
     }

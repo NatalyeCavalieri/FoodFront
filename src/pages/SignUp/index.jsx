@@ -3,6 +3,7 @@ import { ButtonText } from "../../components/ButtonText"
 import { Button } from "../../components/Button"
 import { Input } from "../../components/Input"
 import { Hexagon } from "@phosphor-icons/react"
+import { NavLink } from "react-router-dom"
 
 export function SignUp() {
   return (
@@ -20,9 +21,10 @@ export function SignUp() {
           <Input placeholder="Exemplo: exemplo@exemplo.com.br" />
           <p>Senha</p>
           <Input placeholder="No mínimo 6 caracteres" />
-
           <Button title="Criar uma conta" />
-          <ButtonText title="Já tenho uma conta" />
+          <NavLink to="/signin">
+            <ButtonText title="Já tenho uma conta" />
+          </NavLink>
         </Form>
       </Content>
     </Container>

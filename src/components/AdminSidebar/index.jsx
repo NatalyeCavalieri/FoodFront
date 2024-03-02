@@ -8,6 +8,7 @@ import { CiLogin } from "react-icons/ci"
 
 
 import { Hexagon } from "@phosphor-icons/react"
+import { NavLink } from "react-router-dom"
 
 export function AdminSidebar() {
   return (
@@ -27,7 +28,9 @@ export function AdminSidebar() {
         />
       </Search>
       <Button>
-        <OrderButton title="Novo prato"  />
+        <NavLink to="/new">
+          <OrderButton title="Novo prato" />
+        </NavLink>
         <CiLogin />
       </Button>
     </Container>

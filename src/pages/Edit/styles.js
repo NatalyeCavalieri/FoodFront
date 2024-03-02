@@ -17,6 +17,7 @@ export const ButtonReturn = styled.div`
 
   svg {
     cursor: pointer;
+    color: ${({ theme }) => theme.COLORS.LIGHT_300};
   }
 
   > button {

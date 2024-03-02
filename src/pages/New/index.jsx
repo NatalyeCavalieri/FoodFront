@@ -9,6 +9,7 @@ import { InputSelect } from "../../components/Input/InputsNew/InputSelect/InputS
 import { Textarea } from "../../components/Input/InputsNew/Textarea/Textarea";
 import { Button } from '../../components/Button'
 import { Footer } from '../../components/Footer'
+import { NavLink } from "react-router-dom";
 
 export function New(){
 return (
@@ -16,10 +17,12 @@ return (
     <AdminSidebar />
     <Main>
       <Content>
-        <ButtonReturn>
-          <IoIosArrowBack size={24} />
-          <button>Voltar</button>
-        </ButtonReturn>
+        <NavLink to="/adminHome">
+          <ButtonReturn>
+            <IoIosArrowBack size={24} />
+            <button>Voltar</button>
+          </ButtonReturn>
+        </NavLink>
         <h1> Adicionar prato </h1>
 
         <Form>
