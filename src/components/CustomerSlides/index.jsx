@@ -1,7 +1,5 @@
 import { Container, SlideControl } from "./styles"
-
-import { CostumerCard } from "../CostumerCard"
-
+import { CustomerCard } from "../CustomerCard"
 
 import { Swiper, SwiperSlide } from "swiper/react"
 import { EffectCoverflow, Pagination, Navigation } from "swiper/modules"
@@ -11,9 +9,7 @@ import "swiper/css/pagination"
 import "swiper/css/navigation"
 
 
-
-
-export function CostumerSlides() {
+export function CustomerSlides() {
  
   return (
     <Container>
@@ -49,19 +45,19 @@ export function CostumerSlides() {
         className="swiper-container"
       >
         <SwiperSlide>
-          <CostumerCard />
+          <CustomerCard />
         </SwiperSlide>
         <SwiperSlide>
-          <CostumerCard />
+          <CustomerCard />
         </SwiperSlide>
         <SwiperSlide>
-          <CostumerCard />
+          <CustomerCard />
         </SwiperSlide>
         <SwiperSlide>
-          <CostumerCard />
+          <CustomerCard />
         </SwiperSlide>
         <SwiperSlide>
-          <CostumerCard />
+          <CustomerCard />
         </SwiperSlide>
         <SlideControl>
           <div className="button-prev slider-arrow">

@@ -8,7 +8,7 @@ import slideImage_1 from "../../assets/Mask group-1.png"
 import { NavLink } from 'react-router-dom'
 
 
-export function CostumerCard(){
+export function CustomerCard(){
    const [emptyHeart, setEmptyHeart] = useState(true)
 
    function handleToggleHeart() {

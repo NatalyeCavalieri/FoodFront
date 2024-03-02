@@ -9,7 +9,7 @@ import { OrderButton } from '../OrderButton'
 
 
 
-export function CostumerSidebar(){
+export function CustomerSidebar(){
   return (
     <Container>
       <RxHamburgerMenu className="hamburger" />

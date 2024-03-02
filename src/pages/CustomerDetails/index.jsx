@@ -1,6 +1,6 @@
 import { TagsIngredient } from "../../components/Ingredient";
 import { ButtonReturn, Container, ContentContainer, ImageContainer, Main, MainContainer, Order } from "./styles";
-import { CostumerSidebar } from '../../components/CostumerSidebar'
+import { CustomerSidebar } from "../../components/CustomerSidebar"
 import { Counter } from '../../components/Counter'
 import { Button } from '../../components/Button'
 import { Footer } from '../../components/Footer'
@@ -10,10 +10,10 @@ import slideImage_1 from "../../assets/Mask group-1.png"
 import { NavLink } from "react-router-dom";
 
 
-export function CostumerDetails() {
+export function CustomerDetails() {
   return (
     <Container>
-      <CostumerSidebar />
+      <CustomerSidebar />
 
       <MainContainer>
         <NavLink to="/costumerHome">
